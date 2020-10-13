@@ -1,4 +1,4 @@
-var postcss = require('postcss');
+evar postcss = require('postcss');
 
 module.exports =  postcss.plugin('myplugin', function myplugin(options) {
 
@@ -24,7 +24,7 @@ module.exports =  postcss.plugin('myplugin', function myplugin(options) {
 function getIncludes(rule) {
     var selectors = [];
     rule.walkAtRules(function (_rule) {
-        if (_rule.name == 'include') {
+        if (_rule.name == 'extends') {
             var params = commaListToArray(removeSpaces(_rule.params));
             selectors = selectors.concat(params);
 

@@ -1,4 +1,4 @@
-# postcss-simple-include
+# postcss-simple-extends
 
 Use `@extends` with basic CSS classes instead of mixins.
 

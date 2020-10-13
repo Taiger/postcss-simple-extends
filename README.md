@@ -1,6 +1,6 @@
 # postcss-simple-include
 
-Use `@include` with basic CSS classes instead of mixins.
+Use `@extends` with basic CSS classes instead of mixins.
 
 ## Usage
 
@@ -16,8 +16,8 @@ This input:
     }
 
     main {
-        @include .colors;
-        @include .padding;
+        @extends .colors;
+        @extends .padding;
     }
 
 Will generate into:
@@ -40,9 +40,10 @@ Will generate into:
 This syntax is supported too:
 
     main {
-        @include .colors, .padding;
+        @extends .colors, .padding;
     }
 
 ## License
 
 MIT.
+Credit brechtcs/postcss-simple-include

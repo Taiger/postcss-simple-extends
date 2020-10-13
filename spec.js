@@ -30,8 +30,8 @@ test('parse basic includes', t => {
     }
 
     main {
-      @include .colors;
-      @include .padding;
+      @extends .colors;
+      @extends .padding;
     }`
 
   run(t, input, expected)
@@ -49,7 +49,7 @@ test('parse comma-separated includes list', t => {
     }
 
     main {
-      @include .colors, .padding;
+      @extends .colors, .padding;
     }`
 
   run(t, input, expected)
